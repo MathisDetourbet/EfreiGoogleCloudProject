@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>SoftwareCloudProjectDetourbetMaris</servlet-name>
+		<servlet-class>com.efrei.SoftwareCloudProjectDetourbetMarisServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SoftwareCloudProjectDetourbetMaris</servlet-name>
+		<url-pattern>/softwarecloudprojectdetourbetmaris</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Formulaire</servlet-name>
+		<servlet-class>com.efrei.FormulaireServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Formulaire</servlet-name>
+		<url-pattern>/formulaire</url-pattern>	
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Traitement</servlet-name>
+		<servlet-class>com.efrei.TraitementServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Traitement</servlet-name>
+		<url-pattern>/traitement</url-pattern>	
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
